@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    height: 3.438em;
+    background: #F55A5A;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.904rem;
+}
+
+nav > img {
+    width: 20px;
+    align-self: center;
+    margin-right: 7px;
+}
+
+.card-container {
+    display: flex;
+    margin: 20px;
+    border-bottom: 1px solid #F5F5F5;
+    width: 29.375rem;
+    padding-bottom: 20px;
+}
+
+.card-container > img{
+    width: 10.438rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.seattle > img{
+    object-position: -110px 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* typography */
+
+.text-container {
+    padding: 20px;
+}
+
+.location,
+.google-maps,
+.date,
+.desc {
+    font-size: 0.762em;
+}
+
+.location {
+    margin-left: 0.25rem;
+    text-transform: uppercase;
+}
+
+.google-maps{
+    color: #918E9B;
+    margin-left: 0.750em;
+}
+
+.title {
+    font-size: 1.563em;
+    margin-top: 0.5rem;
+}
+
+.date {
+    font-weight: 700;
+    margin-bottom: 0.563rem;
+}
+
+.desc {
+    line-height: 0.938rem;
+}
+
+@media (min-width: 900px){
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card-container {
+        width: 45vw;
+    }
+}
